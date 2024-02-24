@@ -15,7 +15,8 @@
 
 .header {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .corner::before {
@@ -36,8 +37,8 @@
   left: 0;
   width: 25px;
   height: 25px;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--menu-color);
+  border-inline-start: 1px solid var(--menu-color);
 }
 
 .title-decor {
@@ -199,7 +200,6 @@
 }
 
 .footer {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,6 +212,10 @@
   .page {
     padding-inline: var(--padding);
     padding-block-start: var(--padding);
+  }
+
+  .header {
+    min-height: 1024px;
   }
 
   .header::after {
@@ -298,6 +302,10 @@
 }
 
 @media (min-width: 1024px) {
+  .header {
+    min-height: 768px;
+  }
+
   .header__theme-menu-item:not(:last-of-type) {
     padding-block-end: 0;
   }
