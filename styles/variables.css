@@ -2,3 +2,22 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --bg-color: #000028;
+  --accent-color: #FF0070;
+  --text-color: #F1B2CE;
+  --heading-text-color:  #DB00FF;
+  --title-text-color: #000028;
+  --title-accent-color: #FF0070;
+  --border-hover: #FF007066;
+  --menu-color: #FF0070;
+  --padding: 10px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --padding: 20px;
+  }
+}
+
+
