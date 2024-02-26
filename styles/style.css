@@ -13,7 +13,7 @@
   padding-block-start: var(--padding);
 }
 
-.header {
+.full-page-height {
   position: relative;
   height: 100vh;
   min-height: 668px;
@@ -214,11 +214,11 @@
     padding-block-start: var(--padding);
   }
 
-  .header {
+  .full-page-height {
     min-height: 1024px;
   }
 
-  .header::after {
+  .corner::after {
     bottom: 40px;
   }
 
@@ -302,7 +302,7 @@
 }
 
 @media (min-width: 1024px) {
-  .header {
+  .full-page-height {
     min-height: 768px;
   }
 
@@ -319,10 +319,6 @@
     justify-content: center;
     align-items: center;
     padding-block-start: 0;
-  }
-
-  .header__subtitle::after {
-    top: 161px;
   }
 
   .header__subtitle {
