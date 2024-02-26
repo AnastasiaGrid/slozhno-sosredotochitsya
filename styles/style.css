@@ -13,7 +13,7 @@
   padding-block-start: var(--padding);
 }
 
-.full-page-height {
+.header {
   position: relative;
   height: 100vh;
   min-height: 668px;
@@ -206,6 +206,9 @@
   width: 100%;
   margin-block-start: 50px;
   padding-block-end: 20px;
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
 }
 
 @media (min-width: 768px) {
@@ -214,7 +217,7 @@
     padding-block-start: var(--padding);
   }
 
-  .full-page-height {
+  .header {
     min-height: 1024px;
   }
 
@@ -298,11 +301,12 @@
   .footer {
     margin-block-start: 80px;
     padding-block-end: 40px;
+    min-height: 1024px;
   }
 }
 
 @media (min-width: 1024px) {
-  .full-page-height {
+  .header {
     min-height: 768px;
   }
 
@@ -334,5 +338,8 @@
     grid-template-columns: repeat(3, minmax(315px, auto));
     justify-content: center;
     align-items: start;
+  }
+  .footer {
+    min-height: 768px;
   }
 }
