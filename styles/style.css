@@ -13,7 +13,7 @@
   padding-block-start: var(--padding);
 }
 
-.header {
+.full-page-height {
   position: relative;
   height: 100vh;
   min-height: 668px;
@@ -43,7 +43,7 @@
 
 .title-decor {
   background-color: var(--accent-color);
-  color: var(--title-text-color);
+  color: var(--title-text-color, lime);
   font-size: 18px;
   font-weight: 700;
 }
@@ -204,11 +204,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-block-start: 50px;
-  padding-block-end: 20px;
-  position: relative;
-  height: 100vh;
-  min-height: 668px;
 }
 
 @media (min-width: 768px) {
@@ -217,7 +212,7 @@
     padding-block-start: var(--padding);
   }
 
-  .header {
+  .full-page-height {
     min-height: 1024px;
   }
 
@@ -298,15 +293,10 @@
     margin-block-end: 20px;
   }
 
-  .footer {
-    margin-block-start: 80px;
-    padding-block-end: 40px;
-    min-height: 1024px;
-  }
 }
 
 @media (min-width: 1024px) {
-  .header {
+  .full-page-height {
     min-height: 768px;
   }
 
@@ -338,8 +328,5 @@
     grid-template-columns: repeat(3, minmax(315px, auto));
     justify-content: center;
     align-items: start;
-  }
-  .footer {
-    min-height: 768px;
   }
 }
